@@ -8,4 +8,4 @@ cd "$(dirname "$0")"
 
 ./gradlew clean build
 
-echo "Atm Service build completed successfully."
+echo "Service build completed successfully."
