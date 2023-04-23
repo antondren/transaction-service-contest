@@ -12,6 +12,7 @@ import java.util.concurrent.ConcurrentHashMap;
 @Component
 public class AccountRepositoryImpl implements AccountRepository {
     private final ConcurrentHashMap<String, Account> repository = new ConcurrentHashMap<>();
+
     @Override
     public List<Account> getAllAccounts() {
         return new ArrayList<>(repository.values());
