@@ -3,7 +3,6 @@ package com.contest.transactionservice.service;
 import com.contest.transactionservice.dto.Account;
 import com.contest.transactionservice.dto.Transaction;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -14,7 +13,6 @@ import java.util.List;
 @RestController
 @RequiredArgsConstructor
 public class BankTransactionController {
-    @Autowired
     private final BankService bankService;
 
     @PostMapping("/transactions/report")
